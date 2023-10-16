@@ -520,7 +520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &492553316
 RectTransform:
   m_ObjectHideFlags: 0
@@ -539,8 +539,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.683, y: -7.342}
-  m_SizeDelta: {x: 1031.685, y: 737.219}
+  m_AnchoredPosition: {x: -11.752, y: 0.000099182}
+  m_SizeDelta: {x: 1096.17, y: 1199.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &632342455
 GameObject:
@@ -791,8 +791,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardBackSprite: {fileID: 1258132366, guid: ce6ae08705363af4a8fff85cc83c1d8a, type: 3}
   cardFrontSprites:
-  - {fileID: 1767010045, guid: ce6ae08705363af4a8fff85cc83c1d8a, type: 3}
+  - {fileID: 973343497, guid: ce6ae08705363af4a8fff85cc83c1d8a, type: 3}
+  - {fileID: -1483815762, guid: ce6ae08705363af4a8fff85cc83c1d8a, type: 3}
+  - {fileID: -279843021, guid: ce6ae08705363af4a8fff85cc83c1d8a, type: 3}
+  - {fileID: 553486825, guid: ce6ae08705363af4a8fff85cc83c1d8a, type: 3}
+  - {fileID: 1531722293, guid: ce6ae08705363af4a8fff85cc83c1d8a, type: 3}
+  - {fileID: 920159456, guid: ce6ae08705363af4a8fff85cc83c1d8a, type: 3}
   - {fileID: -650148796, guid: ce6ae08705363af4a8fff85cc83c1d8a, type: 3}
+  - {fileID: 1767010045, guid: ce6ae08705363af4a8fff85cc83c1d8a, type: 3}
+  - {fileID: -684329454, guid: ce6ae08705363af4a8fff85cc83c1d8a, type: 3}
+  - {fileID: -1015266544, guid: ce6ae08705363af4a8fff85cc83c1d8a, type: 3}
   cardPrefab: {fileID: 8916865464460137361, guid: d1c3d9f293f4d0f4e8e729c779e3d7b7, type: 3}
   cardContainer: {fileID: 1011746038}
   gamePanel: {fileID: 492553315}
