@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Card : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class Card : MonoBehaviour
     private bool isFlipped; // Whether the card is facing front or back
     private bool isTurning; // Whether the card is currently in the process of turning
     [SerializeField]
-    private SpriteRenderer cardRenderer; // Reference to the card's SpriteRenderer component
+    private Image cardRenderer; // Reference to the card's SpriteRenderer component
 
     // Coroutine for a 90-degree flip animation
     // If changeSprite is true, it will switch to the back/front sprite before flipping another 90 degrees
