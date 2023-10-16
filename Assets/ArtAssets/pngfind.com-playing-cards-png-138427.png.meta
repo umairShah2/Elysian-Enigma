@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: ce6ae08705363af4a8fff85cc83c1d8a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngfind.com-playing-cards-png-138427_0
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 497
+        width: 181
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6c21da18423c14f8cb10ff6a4c3fb7
+      internalID: 973343497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-playing-cards-png-138427_1
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 497
+        width: 181
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7559eda7d6c06540bf3c37dd02cdf17
+      internalID: -1483815762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-playing-cards-png-138427_2
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 497
+        width: 181
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f6136674054ad45ae13135ce56d81e
+      internalID: -279843021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-playing-cards-png-138427_3
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 497
+        width: 181
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489f4fbf8cfbf2249b9d8f998171671a
+      internalID: 553486825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-playing-cards-png-138427_4
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 499
+        width: 181
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593e0f6fb595dcd4aa041be6d704a1c3
+      internalID: 1531722293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-playing-cards-png-138427_5
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 497
+        width: 181
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b71d4e542ca4424684c20e318d894f2
+      internalID: 920159456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-playing-cards-png-138427_6
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 494
+        width: 181
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbbb6fb5eaead24593ab67d8963cfaa
+      internalID: -650148796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-playing-cards-png-138427_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 504
+        width: 181
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a0da33652988c4b889cf2dc4816fab
+      internalID: 1767010045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-playing-cards-png-138427_17
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 495
+        width: 181
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269cbaaed465c3c4485633391941ef33
+      internalID: -684329454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-playing-cards-png-138427_18
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 498
+        width: 181
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967d2bb55b8a0aa40be7eb27008c3888
+      internalID: -1015266544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-playing-cards-png-138427_22
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 175
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc737dd3b9e7f8d47b1a43a575713e17
+      internalID: 1258132366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 30f51197110cbea43aec0668cb992933
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pngfind.com-playing-cards-png-138427_0: 973343497
+      pngfind.com-playing-cards-png-138427_1: -1483815762
+      pngfind.com-playing-cards-png-138427_10: 1169676694
+      pngfind.com-playing-cards-png-138427_11: -1400806725
+      pngfind.com-playing-cards-png-138427_12: -2127270586
+      pngfind.com-playing-cards-png-138427_13: 1727532647
+      pngfind.com-playing-cards-png-138427_14: -1482816936
+      pngfind.com-playing-cards-png-138427_15: -1442870034
+      pngfind.com-playing-cards-png-138427_16: -1043958003
+      pngfind.com-playing-cards-png-138427_17: -684329454
+      pngfind.com-playing-cards-png-138427_18: -1015266544
+      pngfind.com-playing-cards-png-138427_19: 658238440
+      pngfind.com-playing-cards-png-138427_2: -279843021
+      pngfind.com-playing-cards-png-138427_20: 2056787961
+      pngfind.com-playing-cards-png-138427_21: -593630165
+      pngfind.com-playing-cards-png-138427_22: 1258132366
+      pngfind.com-playing-cards-png-138427_23: 673413830
+      pngfind.com-playing-cards-png-138427_24: -1802183624
+      pngfind.com-playing-cards-png-138427_3: 553486825
+      pngfind.com-playing-cards-png-138427_4: 1531722293
+      pngfind.com-playing-cards-png-138427_5: 920159456
+      pngfind.com-playing-cards-png-138427_6: -650148796
+      pngfind.com-playing-cards-png-138427_7: 1767010045
+      pngfind.com-playing-cards-png-138427_8: 779851220
+      pngfind.com-playing-cards-png-138427_9: -714813471
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
