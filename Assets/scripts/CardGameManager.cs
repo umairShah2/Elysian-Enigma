@@ -14,7 +14,7 @@ public class CardGameManager : MonoBehaviour
     [SerializeField]
     private Sprite[] cardFrontSprites;
 
-
+    private bool isGameStarted;
     // Get the card front sprite based on its ID
     public Sprite GetCardFrontSprite(int spriteId)
     {
@@ -25,6 +25,12 @@ public class CardGameManager : MonoBehaviour
     public Sprite GetCardBackSprite()
     {
         return cardBackSprite;
+    }
+
+
+    public bool CanClick()
+    {
+        return isGameStarted;
     }
 
 }
