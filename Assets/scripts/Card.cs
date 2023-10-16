@@ -122,5 +122,6 @@ public class Card : MonoBehaviour
     private IEnumerator NotifyGameManagerOfSelection()
     {
         yield return new WaitForSeconds(0.5f);
+        CardGameManager.Instance.CardClicked(frontSpriteID, cardID);
     }
 }
