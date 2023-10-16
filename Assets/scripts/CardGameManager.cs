@@ -238,6 +238,7 @@ public class CardGameManager : MonoBehaviour
         {
             if (selectedSpriteIndex == spriteId)
             {
+                AudioManager.Instance.PlayAudioClip(1);
                 cards[selectedCardIndex].DeactivateCard();
                 cards[cardId].DeactivateCard();
                 remainingCards -= 2;
@@ -245,6 +246,7 @@ public class CardGameManager : MonoBehaviour
             }
             else
             {
+                AudioManager.Instance.PlayAudioClip(2);
                 cards[selectedCardIndex].FlipCard();
                 cards[cardId].FlipCard();
             }
@@ -267,5 +269,6 @@ public class CardGameManager : MonoBehaviour
     {
         isGameStarted = false;
         gamePanel.SetActive(false);
+        AudioManager.Instance.PlayAudioClip(3);
     }
 }

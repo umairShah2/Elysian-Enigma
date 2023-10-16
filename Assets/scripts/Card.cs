@@ -42,6 +42,7 @@ public class Card : MonoBehaviour
     public void FlipCard()
     {
         isTurning = true;
+        AudioManager.Instance.PlayAudioClip(0);
         StartCoroutine(Flip90Degrees(transform, 0.25f, true));
     }
 
