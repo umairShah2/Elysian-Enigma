@@ -18,7 +18,7 @@ public class CardGameManager : MonoBehaviour
     private GameObject cardPrefab;
 
     [SerializeField]
-    private GameObject cardContainer;
+    private RectTransform cardContainer;
 
 
     private Card[] cards;
@@ -49,6 +49,8 @@ public class CardGameManager : MonoBehaviour
     private GameObject StartBtn;
 
 
+    public RectTransform panelRow;
+
     void Awake()
     {
         Instance = this;
@@ -75,66 +77,44 @@ public class CardGameManager : MonoBehaviour
         StartCoroutine(HideCardFaces());
     }
 
+    public void ClearGrid()
+    {
+        for (int count = 0; count < cardContainer.childCount; count++)
+        {
+            Destroy(cardContainer.GetChild(count).gameObject);
+        }
+    }
+
     private void SetGamePanel()
     {
-        // if game is odd, we should have 1 card less
-        int isOdd = gameSize % 2;
+        ClearGrid();
 
-        cards = new Card[gameSize * gameSize - isOdd];
-        // remove all gameobject from parent
-        foreach (Transform child in cardContainer.transform)
-        {
-            GameObject.Destroy(child.gameObject);
-        }
-        // calculate position between each card & start position of each card based on the Panel
-        RectTransform panelsize = gameObject.transform.GetComponent(typeof(RectTransform)) as RectTransform;
-        float row_size = panelsize.sizeDelta.x;
-        float col_size = panelsize.sizeDelta.y;
-        float scale = 1.0f / gameSize;
-        float xInc = row_size / gameSize;
-        float yInc = col_size / gameSize;
-        float curX = -xInc * (float)(gameSize / 2);
-        float curY = -yInc * (float)(gameSize / 2);
 
-        if (isOdd == 0)
+
+        GameObject cellInputField;
+        RectTransform rowParent;
+        
+        cards = new Card[gameSize];
+        for (int rowIndex = 0; rowIndex < Rows; rowIndex++)
         {
-            curX += xInc / 2;
-            curY += yInc / 2;
-        }
-        float initialX = curX;
-        // for each in y-axis
-        for (int i = 0; i < gameSize; i++)
-        {
-            curX = initialX;
-            // for each in x-axis
-            for (int j = 0; j < gameSize; j++)
+            rowParent = (RectTransform)Instantiate(panelRow);
+            rowParent.transform.SetParent(cardContainer);
+            rowParent.transform.localScale = Vector3.one;
+            for (int colIndex = 0; colIndex < Cols; colIndex++)
             {
-                GameObject c;
-                // if is the last card and game is odd, we instead move the middle card on the panel to last spot
-                if (isOdd == 1 && i == (gameSize - 1) && j == (gameSize - 1))
-                {
-                    int index = gameSize / 2 * gameSize + gameSize / 2;
-                    c = cards[index].gameObject;
-                }
-                else
-                {
-                    // create card prefab
-                    c = Instantiate(cardPrefab);
-                    // assign parent
-                    c.transform.parent = cardContainer.transform;
+                cellInputField = (GameObject)Instantiate(cardPrefab);
+                cellInputField.transform.SetParent(rowParent);
+                cellInputField.GetComponent<RectTransform>().localScale = Vector3.one;
+                // Create a new card
+                Card c= cellInputField.GetComponent<Card>();
 
-                    int index = i * gameSize + j;
-                    cards[index] = c.GetComponent<Card>();
-                    cards[index].CardID = index;
-                    // modify its size
-                    c.transform.localScale = new Vector3(scale, scale);
-                }
-                // assign location
-                c.transform.localPosition = new Vector3(curX, curY, 0);
-                curX += xInc;
+                // Set the CardID for the card
+                int index = rowIndex * Cols + colIndex;
+                c.CardID = index;
 
+                // Store the card in the cards array
+                cards[index] = c;
             }
-            curY += yInc;
         }
 
     }
@@ -198,10 +178,21 @@ public class CardGameManager : MonoBehaviour
 
         if (sizeParts.Length == 2 && int.TryParse(sizeParts[0], out int numRows) && int.TryParse(sizeParts[1], out int numCols))
         {
-            gameSize = (numRows * numCols) / 2;
-            sizeTextLabel.text = numRows + " X " + numCols;
-            StartBtn.SetActive(true);
-
+            
+            if (numRows % 2 == 1 && numCols % 2 == 1)
+            {
+                sizeTextLabel.text = "Worng both are Odd number Not Possible";
+               
+            }
+            else
+            {
+                gameSize = (numRows * numCols);
+                sizeTextLabel.text = numRows + " X " + numCols;
+                StartBtn.SetActive(true);
+                Rows = numRows;
+                Cols = numCols;
+            }
+            
         }
         else
         {
@@ -209,6 +200,7 @@ public class CardGameManager : MonoBehaviour
         }
     }
 
+    int Rows, Cols;
     // Get the card front sprite based on its ID
     public Sprite GetCardFrontSprite(int spriteId)
     {
