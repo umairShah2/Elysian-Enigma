@@ -51,15 +51,24 @@ public class CardGameManager : MonoBehaviour
 
     public RectTransform panelRow;
 
+    private int score = 0;
+    public Text MainMenuTxt, GamePlayTxt;
+
     void Awake()
     {
         Instance = this;
+
     }
 
     void Start()
     {
         isGameStarted = false;
         gamePanel.SetActive(false);
+        scoreUpdate();
+    }
+    void scoreUpdate()
+    {
+        MainMenuTxt.text = PlayerPrefs.GetInt("PlayerScore").ToString();
     }
     public void StartCardGame()
     {
@@ -69,7 +78,7 @@ public class CardGameManager : MonoBehaviour
         isGameStarted = true;
         MenuPanel.SetActive(false);
         gamePanel.SetActive(true);
-        winPanel.SetActive(false);
+       
         SetGamePanel();
         selectedCardIndex = selectedSpriteIndex = -1;
         remainingCards = cards.Length;
@@ -235,6 +244,8 @@ public class CardGameManager : MonoBehaviour
                 cards[cardId].DeactivateCard();
                 remainingCards -= 2;
                 CheckGameWin();
+                AddToScore(10); // Add 10 points on each match.
+                SaveScore();    // Save the score.
             }
             else
             {
@@ -256,11 +267,25 @@ public class CardGameManager : MonoBehaviour
     {
         winPanel.SetActive(show);
     }
+    private void AddToScore(int pointsToAdd)
+    {
+        score += pointsToAdd;
+       GamePlayTxt.text = "Score : "+ score.ToString();
+    }
+
+    private void SaveScore()
+    {
+        PlayerPrefs.SetInt("PlayerScore", score);
+        PlayerPrefs.Save(); 
+    }
 
     private void EndGame()
     {
         isGameStarted = false;
         gamePanel.SetActive(false);
+        MenuPanel.SetActive(true);
+        StartBtn.SetActive(false);
+        scoreUpdate();
         AudioManager.Instance.PlayAudioClip(3);
     }
 }
